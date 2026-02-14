@@ -2,8 +2,6 @@
 
 A real-time collaborative design tool with custom GLSL shaders.
 
-- 📤 Export to PNG (1x, 2x, 4x)
-
 ## Project Structure
 ```
 void-studio/
