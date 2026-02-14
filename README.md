@@ -2,15 +2,6 @@
 
 A real-time collaborative design tool with custom GLSL shaders.
 
-## Features
-
-- 🎨 Multiple shape tools (rectangles, circles, stars, text, images)
-- ✨ Custom GLSL shader editor
-- 🤝 Real-time collaboration with WebSockets
-- 💾 Project save/load with localStorage
-- ↩️ Undo/Redo system
-- 🎭 23+ shader presets
-- 🖼️ Image import
 - 📤 Export to PNG (1x, 2x, 4x)
 
 ## Project Structure
@@ -61,20 +52,6 @@ See deployment guides for:
 - [Render](#render)
 - [Fly.io](#flyio)
 
-## Tech Stack
-
-**Frontend:**
-- React 18
-- Three.js + React Three Fiber
-- Vite
-- Zustand
-- Monaco Editor
-- Socket.io Client
-
-**Backend:**
-- Node.js + Express
-- Socket.io
-- CORS
 
 ## License
 
