@@ -1,0 +1,59 @@
+.connection-status {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.status-indicator,
+.active-users,
+.username-button,
+.share-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status-indicator.connected {
+  color: var(--success);
+  border-color: var(--success);
+}
+
+.status-indicator.disconnected {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.active-users {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.username-button,
+.share-button {
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.username-button:hover,
+.share-button:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.share-button.copied {
+  background: var(--success);
+  border-color: var(--success);
+  color: white;
+}

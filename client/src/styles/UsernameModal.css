@@ -1,0 +1,101 @@
+.username-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10001;
+  animation: fadeIn 0.2s ease;
+}
+
+.username-modal {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+  animation: slideUp 0.3s ease;
+}
+
+.username-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.username-header svg {
+  color: var(--accent-blue);
+  margin-bottom: 16px;
+}
+
+.username-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.username-header p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.username-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.username-input {
+  width: 100%;
+  padding: 16px;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.username-input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  background: var(--bg-primary);
+}
+
+.username-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.username-submit {
+  padding: 16px;
+  background: var(--accent-blue);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.username-submit:hover:not(:disabled) {
+  background: #3a8aef;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+}
+
+.username-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.username-submit:active:not(:disabled) {
+  transform: translateY(0);
+}
